@@ -1,0 +1,73 @@
+.nav-self {
+    width: 100%;
+    height: 4rem;
+}
+.open-button {
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem !important;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: #C53030; /* Rouge */
+    cursor: pointer;
+}
+
+.navbar-self {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: #783F04; /* Marron */
+    color: #CDA434; /* Or */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 2rem;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.navbar-self.open {
+    transform: translateX(0);
+}
+
+
+.navbar-self ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-self ul li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.content-nav{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

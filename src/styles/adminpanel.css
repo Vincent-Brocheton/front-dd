@@ -1,0 +1,22 @@
+.button-menu{
+    line-height: 3rem;
+    text-align: center;
+    background-color: #CDA434;
+    border-radius: 10px;
+    width: 80vw;
+}
+
+.content-admin{
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1200px){
+    .button-menu{
+        width: 20vw;
+        line-height: 7rem;
+    }
+}

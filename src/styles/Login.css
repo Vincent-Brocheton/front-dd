@@ -1,0 +1,87 @@
+:root{
+    --colorBlue: #04C3FF;
+    --colorBlack: black;
+    --colorWhite: white;
+}
+
+.containerLoginPage{
+    /*background: linear-gradient(180deg, rgba(3, 195, 255, 0) 0%, rgba(4, 195, 255, 0.5) 100%);*/
+    mix-blend-mode: normal;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.containerLogoLoginPage{
+    text-align: center;
+    margin: 20px 0 ;
+}
+.containerLogoLoginPage img{
+    width: 20%;
+}
+.containerFormLoginPage{
+    background-color: var(--colorWhite);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid 4px var(--colorBlue);
+    border-radius: 10px;
+    height: 250px;
+    width: 45%;
+    padding-bottom: 1rem;
+}
+.containerFormLoginPage form{
+    width: 100%;
+    margin: auto;
+}
+.loginPageBloc{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+.loginPageBloc input{
+    border : solid 2px var(--colorBlue);
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    margin: 15px 0;
+}
+
+.ButtonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem !important;
+}
+
+@media (orientation: portrait) {
+    .containerLoginPage{
+        position: fixed;
+    }
+    .containerLogoLoginPage img{
+        width: 55%;
+    }
+    .containerFormLoginPage{
+        background-color: var(--colorWhite);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: solid 4px var(--colorBlue);
+        border-radius: 10px;
+        height: 320px;
+        width: 80%;
+    }
+    .loginPageBloc input{
+        padding: 10px;
+        margin: 20px 0;
+    }
+    .submitLogin{
+        padding: 10px;
+        margin-top: 20px;
+        width: 50%;
+    }
+}

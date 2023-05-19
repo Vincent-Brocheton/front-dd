@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/adminpanel.css"
+import "../../styles/adminpanel.css"
 import {Link} from "react-router-dom";
 
 const AdminPanel = () => {
@@ -8,15 +8,15 @@ const AdminPanel = () => {
             <h1>Admin Panel</h1>
             <div className="content-admin">
 
-                <Link to={"#"} className="nav-link">
+                <Link to={"/users"} className="nav-link">
                     <div className="button-menu">
                         Gestion des utilisateurs
                     </div>
                 </Link>
-                <Link to={"#"} className="nav-link">
+                <Link to={"/races"} className="nav-link">
                     <div className="button-menu">Gestion des Races</div>
                 </Link>
-                <Link to={"#"} className="nav-link">
+                <Link to={"/classes"} className="nav-link">
                     <div className="button-menu">Gestion des classes</div>
                 </Link>
                 <Link to={"#"} className="nav-link">
