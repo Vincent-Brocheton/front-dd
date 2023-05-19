@@ -1,0 +1,24 @@
+:root {
+    --colorBlue: #04C3FF;
+    --colorBlack: black;
+    --colorWhite: white;
+}
+.submitLogin{
+    border : solid 1px var(--colorBlue);
+    background-color: var(--colorBlue);
+    border-radius: 5px;
+    color: var(--colorWhite);
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.Bouton{
+    width: 25vw;
+}
+@media (orientation: portrait) {
+    .submitLogin{
+        padding: 4px;
+    }
+
+}
