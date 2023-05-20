@@ -116,7 +116,7 @@ const ClasseGestionPage = () => {
                 <Modal.Body>Êtes-vous sûr de vouloir supprimer la classe {classe.nom} ?</Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={() => setModal(false)}>
-                        Close
+                        Fermer
                     </Button>
                     <Button variant="primary" onClick={handleDelete}>
                         Supprimer la classe

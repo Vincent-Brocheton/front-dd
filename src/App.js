@@ -28,6 +28,7 @@ const RaceGestionPage = React.lazy(()=> import('./pages/AdminPage/RaceGestionPag
 const SortsGestionPage = React.lazy(()=> import('./pages/AdminPage/SortsGestionPage'))
 const UserGestionPage = React.lazy(()=> import('./pages/AdminPage/UserGestionPage'))
 const ClasseForm = React.lazy(()=> import('./pages/AdminPage/ClassForm'))
+const CompetenceForm = React.lazy(()=> import('./pages/AdminPage/CompetenceForm'))
 
 axios.defaults.withCredentials = true;
 
@@ -86,6 +87,13 @@ function App() {
                                 </AdminRoute>
                             </React.Suspense>
                         } path={"/competences"}/>
+                        <Route element={
+                            <React.Suspense fallback={<><Loading/></>}>
+                                <AdminRoute>
+                                    <CompetenceForm/>
+                                </AdminRoute>
+                            </React.Suspense>
+                        } path={"/competences/:id"}/>
                         <Route element={
                             <React.Suspense fallback={<><Loading/></>}>
                                 <AdminRoute>
