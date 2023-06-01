@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Gestion de Personnage",
+  "name": "Application DD Gestion de Personnage",
   "icons": [
     {
       "src": "favicon.ico",
